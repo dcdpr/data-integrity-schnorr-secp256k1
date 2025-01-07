@@ -8,4 +8,4 @@ We encourage contributions meeting the
 issues and Pull Requests in the GitHub repository, discussions also occur on the
 [public-credentials](http://lists.w3.org/Archives/Public/public-credentials/) mailing list.
 
-
+Draft specification: https://dcdpr.github.io/data-integrity-schnorr-secp256k1/
