@@ -1,0 +1,9 @@
+buidl @ git+https://github.com/buidl-bitcoin/buidl-python@c0b7d57
+jupyter
+termcolor
+termcolor
+nbconvert
+jcs
+py_rdfc10 @ git+https://github.com/amagioss/py_rdfc10
+base58
+multiformats
