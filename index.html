@@ -18,7 +18,7 @@
         specStatus: "CG-DRAFT",
 
         // the specification's short name, as in http://www.w3.org/TR/short-name/
-        shortName: "vc-di-schnorr-secp256k1",
+        // shortName: "vc-di-schnorr-secp256k1",
         group: "credentials",
 
         // if you wish the publication date to be other than today, set this
@@ -305,7 +305,7 @@ Multibase encoding of a Multikey encoded secp256k1 x-only public key.
 The Multikey encoding of a secp256k1 x-only 256-bit public key MUST start
 with the two-byte prefix 0xe14a (the varint expression of 0x2561) followed by the 
 32-byte x-only public key data. The resulting 34-byte value MUST then be encoded 
-using the base-58-btc alphabet, according to <a data-cite="cid#multibase-0"></a>
+using the base-58-btc alphabet, according to <a data-cite="cid#multibase-0">
 Section 2.4 Multibase</a> of [[[CID]]], and then prepended with the base-58-btc Multibase header (z).
 Any other encoding MUST NOT be allowed. 
 
