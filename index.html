@@ -294,27 +294,28 @@ signatures.
           <h4>Multikey</h4>
 
           <p>
-The <a data-cite="controller-document#multikey">Multikey format</a>, defined in
-[[[controller-document]]], is used to express public keys for the cryptographic
+The <a data-cite="cid#multikey">Multikey format</a>, defined in
+[[[CID]]], is used to express public keys for the cryptographic
 suites defined in this specification.
           </p>
 
           <p>
-The `publicKeyMultibase` value of the verification method MUST start with the
-base-58-btc prefix (`z`), as defined in the
-<a data-cite="controller-document#multibase-0">Multibase section</a> of
-[[[controller-document]]]. A Multibase-encoded secp256k1 xonly 256-bit public key value
-follows, as defined in the
-<a data-cite="controller-document#Multikey">Multikey section</a> of
-[[[controller-document]]]. Any other encoding MUST NOT be allowed.
+The `publicKeyMultibase` value of the verification method MUST be a a base-58-btc 
+Multibase encoding of a Multikey encoded secp256k1 x-only public key. 
+The Multikey encoding of a secp256k1 x-only 256-bit public key MUST start
+with the two-byte prefix 0xe14a (the varint expression of 0x2561) followed by the 
+32-byte x-only public key data. The resulting 34-byte value MUST then be encoded 
+using the base-58-btc alphabet, according to <a data-cite="cid#multibase-0"></a>
+Section 2.4 Multibase</a> of [[[CID]]], and then prepended with the base-58-btc Multibase header (z).
+Any other encoding MUST NOT be allowed. 
 
-TODO: define the multikey header 0x2561 for this key type.
+
           </p>
 
           <p class="advisement">
 Developers are advised to not accidentally publish a representation of a private
 key. Implementations of this specification will raise errors if they encounter a
-Multikey prefix value other than `0x2561` in a `publicKeyMultibase` value.
+Multikey prefix value other than `0xe14a` in a `publicKeyMultibase` value.
           </p>
 
           <pre class="example nohighlight"
@@ -360,15 +361,15 @@ Multikey prefix value other than `0x2561` in a `publicKeyMultibase` value.
           </pre>
 
           <p>
-The `secretKeyMultibase` value of the verification method MUST start with the
+<!-- The `secretKeyMultibase` value of the verification method MUST start with the
 base-58-btc prefix (`z`), as defined in the
 <a data-cite="controller-document#multibase-0">Multibase section</a> of
 [[[controller-document]]]. A Multibase-encoded secp256k1 256-bit secret key value
 follows, as defined in the
 <a data-cite="controller-document#Multikey">Multikey section</a> of
-[[[controller-document]]]. Any other encoding MUST NOT be allowed.
+[[[controller-document]]]. Any other encoding MUST NOT be allowed. -->
 
-TODO: again define the encoding and multikey prefix
+TODO: Do we want to define a secretKeyMultibase value for secp256k1 keys?
           </p>
 
           <p class="advisement">
