@@ -1,8 +1,8 @@
 # Jupyter Notebook Examples
 
-This set of jupyter notebooks act as a proof of concept implementation for the Data Integrity Schnorr Secp256k1 2024 Signature Suite specification. 
+This set of jupyter notebooks act as a proof of concept implementation for the Data Integrity Schnorr Secp256k1 2025 Signature Suite specification. 
 
-The implementations have been created primarily with the [buidl-python](https://github.com/buidl-bitcoin/buidl-python) bitocin library from Jimmy Song.
+The implementations have been created primarily with the [buidl-python](https://github.com/buidl-bitcoin/buidl-python) bitcoin library from Jimmy Song.
 
 # Prerequisites
 
