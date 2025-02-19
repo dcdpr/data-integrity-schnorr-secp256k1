@@ -79,7 +79,7 @@
         // }
       ],
 
-        // github: "https://github.com/w3c/vc-di-eddsa/",
+        github: "https://github.com/dcdpr/data-integrity-schnorr-secp256k1/",
 
         // URI of the patent status for this WG, for Rec-track documents
         // !!!! IMPORTANT !!!!
@@ -187,7 +187,7 @@ ol.algorithm li:before {
       <p>
 This specification describes Data Integrity cryptographic suites for use when
 creating or verifying a digital signature using the the secp256k1 instantiation
-of the Schnorr Signature Algorithm as defined in BIP340.
+of the Schnorr Signature Algorithm as defined in [[BIP340]].
       </p>
     </section>
 
@@ -796,12 +796,10 @@ represented as series of bytes is produced as output.
 
           <ol class="algorithm">
             <li>
-Let `privateKeyBytes` be the result of retrieving the
-private key bytes associated with the
-`options`.`verificationMethod` value as described in the
-Data Integrity [[VC-DATA-INTEGRITY]] specification,
-<a data-cite="vc-data-integrity#processing-model">
-Section 4.1: Processing Model</a>.
+              Let |privateKeyBytes| be the result of retrieving the
+              private key bytes (or a signing interface enabling the use of the private key
+              bytes) associated with the verification method identified by the
+              |options|.|verificationMethod| value..
             </li>
             <li>
 Let `proofBytes` be the result of applying the secp266k1 Schnorr Digital
@@ -1138,12 +1136,10 @@ represented as series of bytes is produced as output.
 
           <ol class="algorithm">
             <li>
-Let `privateKeyBytes` be the result of retrieving the
-private key bytes associated with the
-`options`.`verificationMethod` value as described in the
-Data Integrity [[VC-DATA-INTEGRITY]] specification,
-<a data-cite="vc-data-integrity#algorithms">
-Section 4: Retrieving Cryptographic Material</a>.
+              Let |privateKeyBytes| be the result of retrieving the
+              private key bytes (or a signing interface enabling the use of the private key
+              bytes) associated with the verification method identified by the
+              |options|.|verificationMethod| value.
             </li>
             <li>
 Let `proofBytes` be the result of applying the Schnorr Signatures for secp256k1 algorithm [[BIP340]], with `hashData` as the data to be signed using
