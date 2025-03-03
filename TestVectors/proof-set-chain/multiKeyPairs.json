@@ -1,0 +1,18 @@
+{
+  "keyPair1": {
+    "publicKeyMultibase": "z6DtcrwZju8cVFc5TsTkkQdJbbc2PQGx5kC8GMGXp8TfrMTW",
+    "privateKeyMultibase": "z3vLgNgYiiZcq2bKYHeRt5w2ThEtpy1MFyt3X2fEzqifsK5p"
+  },
+  "keyPair2": {
+    "publicKeyMultibase": "z6DtQLPTjrtwoKJKW2L1UWfUdDLbuhUwUkAywwiVCRXFjEer",
+    "privateKeyMultibase": "z3vLUkrZBGso4KtvHXEcZTVNakkjZ7Zz6kFxBcnY6Sf2aw8j"
+  },
+  "keyPair3": {
+    "publicKeyMultibase": "z6DtekoxvG947C2mGAP4rqKiAH5Pr9RZbLPvknnKtRFF987B",
+    "privateKeyMultibase": "z3vLUUEQYDEQrZK7Kms9YjhXUTMiH6SCRuyDUUsdMdwmAqnz"
+  },
+  "keyPair4": {
+    "publicKeyMultibase": "z6DtX79Zc4FdUCup1NxA7LLteW9FryKaTmJ7D4hMpUQpoXbt",
+    "privateKeyMultibase": "z3vLZZvnoytCqNU6S3gY6SP1KPWxBdW5GRsneXNXaDjH2CGE"
+  }
+}
