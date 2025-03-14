@@ -692,9 +692,6 @@ series of bytes is produced as output.
 
           <ol class="algorithm">
             <li>
-              Let `bytesToHash` be the result of concatenating the `canonicalProofConfig` with the `transformedDocument`.
-            </li> 
-            <!-- <li>
 Let `proofConfigHash` be the result of applying the
 SHA-256 (SHA-2 with 256-bit output) cryptographic hashing algorithm [[RFC6234]]
 to the `canonicalProofConfig`. `proofConfigHash` will be
@@ -705,18 +702,18 @@ Let `transformedDocumentHash` be the result of applying the
 SHA-256 (SHA-2 with 256-bit output) cryptographic hashing algorithm [[RFC6234]]
 to the `transformedDocument`. `transformedDocumentHash` will
 be exactly 32 bytes in size.
-            </li> -->
-            <li>
-              Let `hashData` be the result of applying the
-              SHA-256 (SHA-2 with 256-bit output) cryptographic hashing algorithm [[RFC6234]]
-              to the `bytesToHash`. `hashData` will
-              be exactly 32 bytes in size.
             </li>
-            <!-- <li>
-Let `hashData` be the result of concatenating `proofConfigHash`
+            <li>
+Let `combinedDocumentHashes` be the result of concatenating `proofConfigHash`
 (the first hash produced above) followed by `transformedDocumentHash`
 (the second hash produced above).
-            </li> -->
+            </li>
+            <li>
+Let `hashData` be the result of applying the
+SHA-256 (SHA-2 with 256-bit output) cryptographic hashing algorithm [[RFC6234]]
+to the `combinedDocumentHashes`. `hashData` will
+be exactly 32 bytes in size.
+            </li>
             <li>
 Return `hashData` as the <em>hash data</em>.
             </li>
@@ -1055,13 +1052,27 @@ series of bytes is produced as output.
 
           <ol class="algorithm">
             <li>
-Let `bytesToHash` be the result of concatenating the `canonicalProofConfig` with the `transformedDocument`.
+Let `proofConfigHash` be the result of applying the
+SHA-256 (SHA-2 with 256-bit output) cryptographic hashing algorithm [[RFC6234]]
+to the `canonicalProofConfig`. `proofConfigHash` will be
+exactly 32 bytes in size.
+            </li>
+            <li>
+Let `transformedDocumentHash` be the result of applying the
+SHA-256 (SHA-2 with 256-bit output) cryptographic hashing algorithm [[RFC6234]]
+to the `transformedDocument`. `transformedDocumentHash` will
+be exactly 32 bytes in size.
+            </li>
+            <li>
+Let `combinedDocumentHashes` be the result of concatenating `proofConfigHash`
+(the first hash produced above) followed by `transformedDocumentHash`
+(the second hash produced above).
             </li>
             <li>
 Let `hashData` be the result of applying the
 SHA-256 (SHA-2 with 256-bit output) cryptographic hashing algorithm [[RFC6234]]
-to the `bytesToHash`. `hashData` will be
-exactly 32 bytes in size.
+to the `combinedDocumentHashes`. `hashData` will
+be exactly 32 bytes in size.
             </li>
             <li>
 Return `hashData` as the <em>hash data</em>.
