@@ -1,0 +1,8 @@
+{
+  "type": "DataIntegrityProof",
+  "cryptosuite": "bip340-rdfc-2025",
+  "created": "2023-02-26T22:16:38Z",
+  "verificationMethod": "did:key:z6DtX79Zc4FdUCup1NxA7LLteW9FryKaTmJ7D4hMpUQpoXbt#z6DtX79Zc4FdUCup1NxA7LLteW9FryKaTmJ7D4hMpUQpoXbt",
+  "proofPurpose": "assertionMethod",
+  "previousProof": "urn:uuid:d94f792a-c546-4d06-b38a-da070ab56c23"
+}
