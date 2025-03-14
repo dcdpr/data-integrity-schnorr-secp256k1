@@ -1216,7 +1216,7 @@ Return `verificationResult` as the <em>verification result</em>.
       and FROST [[RFC9591]]. Both of these protocols define how to generate aggregated public 
       Schnorr keys and how to produce valid Schnorr signatures from these keys. 
       It is important to note that these keys and signatures are indistinguishable from any other 
-      Schnorr public key and signature. In other words using the public key it is possible to verify
+      Schnorr public key and signature. In other words, using the public key it is possible to verify
       a signature produced with a multi-signature protocol following the standard Schnorr 
       verification algorithm defined in [[BIP340]]. The verifier does not need to know
       how the signature was produced to be able to verify it against the provided public key. 
@@ -1230,7 +1230,7 @@ Return `verificationResult` as the <em>verification result</em>.
       by the respective specifications requiring the exchange of messages between the n 
       participants of a cryptographic cohort: n-of-n for MuSig2 [[BIP327]] or m-of-n for 
       FROST [[RFC9591]]. For example, with MuSig2 [[BIP327]], each participant generates 
-      a individual Schnorr public key which are then shared and aggregated together to 
+      an individual Schnorr public key which are then shared and aggregated together to 
       produce the aggregated n-of-n public key. Once constructed this public key can be 
       included in a verification method using the same Multikey header. In order to produce 
       a proof using this verification method, the multi-party signing algorithm defined in [[BIP327]] 
