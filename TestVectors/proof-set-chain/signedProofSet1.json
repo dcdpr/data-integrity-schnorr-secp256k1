@@ -21,8 +21,8 @@
     "id": "urn:uuid:26329423-bec9-4b2e-88cb-a7c7d9dc4544",
     "cryptosuite": "bip340-rdfc-2025",
     "created": "2023-02-24T23:36:38Z",
-    "verificationMethod": "did:key:z6DtcrwZju8cVFc5TsTkkQdJbbc2PQGx5kC8GMGXp8TfrMTW#z6DtcrwZju8cVFc5TsTkkQdJbbc2PQGx5kC8GMGXp8TfrMTW",
+    "verificationMethod": "did:key:zQ3shTLakYFnA7a45rR57dwf6RBJj5g7q5dL7Qm42NvZ1Lb1n#zQ3shTLakYFnA7a45rR57dwf6RBJj5g7q5dL7Qm42NvZ1Lb1n",
     "proofPurpose": "assertionMethod",
-    "proofValue": "z2KsGE9nM69UrP1NDcM3RhFFUWRP6rENHGajLnXgVUuLdVeEkYj8s1fMxUs5vfCGum4o2ryrZvgYybAMHKCt3VCox"
+    "proofValue": "z5MgMdZ8VRrL3FwyQqjNMBrgKw1F6A27XuDHgY4LYxzSeMRD1ybU4CBr9PNfgkjA5gZdpXgegvGaktPbriKnPyEkJ"
   }
 }

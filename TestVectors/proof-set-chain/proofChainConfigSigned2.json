@@ -2,8 +2,8 @@
   "type": "DataIntegrityProof",
   "cryptosuite": "bip340-rdfc-2025",
   "created": "2023-02-26T22:16:38Z",
-  "verificationMethod": "did:key:z6DtX79Zc4FdUCup1NxA7LLteW9FryKaTmJ7D4hMpUQpoXbt#z6DtX79Zc4FdUCup1NxA7LLteW9FryKaTmJ7D4hMpUQpoXbt",
+  "verificationMethod": "did:key:zQ3shSiweSYtZMmkEquS9xaqkBwyFXebGDyadrMgKFeMUxFqt#zQ3shSiweSYtZMmkEquS9xaqkBwyFXebGDyadrMgKFeMUxFqt",
   "proofPurpose": "assertionMethod",
   "previousProof": "urn:uuid:d94f792a-c546-4d06-b38a-da070ab56c23",
-  "proofValue": "z2Xw5AhZDuP9yN9o3zuWzEkbM4zGdWx1eXkvcEqp1W79EC4r6tBZZ9W1ABYrwMTkvPwCqPPAwJnXenkZU2gVVjRmY"
+  "proofValue": "z7xYBYenacBUyjqaay3AUyJdwJ7sh1EBBYLSz9eGCkCyqeaEa7bkGrBF8NMZWzqz8cicWrc5EKuw5H1Fovaq3Kfm"
 }

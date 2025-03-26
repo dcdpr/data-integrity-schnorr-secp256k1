@@ -22,31 +22,31 @@
       "id": "urn:uuid:26329423-bec9-4b2e-88cb-a7c7d9dc4544",
       "cryptosuite": "bip340-rdfc-2025",
       "created": "2023-02-24T23:36:38Z",
-      "verificationMethod": "did:key:z6DtcrwZju8cVFc5TsTkkQdJbbc2PQGx5kC8GMGXp8TfrMTW#z6DtcrwZju8cVFc5TsTkkQdJbbc2PQGx5kC8GMGXp8TfrMTW",
+      "verificationMethod": "did:key:zQ3shTLakYFnA7a45rR57dwf6RBJj5g7q5dL7Qm42NvZ1Lb1n#zQ3shTLakYFnA7a45rR57dwf6RBJj5g7q5dL7Qm42NvZ1Lb1n",
       "proofPurpose": "assertionMethod",
-      "proofValue": "z2KsGE9nM69UrP1NDcM3RhFFUWRP6rENHGajLnXgVUuLdVeEkYj8s1fMxUs5vfCGum4o2ryrZvgYybAMHKCt3VCox"
+      "proofValue": "z5MgMdZ8VRrL3FwyQqjNMBrgKw1F6A27XuDHgY4LYxzSeMRD1ybU4CBr9PNfgkjA5gZdpXgegvGaktPbriKnPyEkJ"
     },
     {
       "type": "DataIntegrityProof",
       "id": "urn:uuid:8cc9022b-6b14-4cf3-8571-74972c5feb54",
       "cryptosuite": "bip340-rdfc-2025",
       "created": "2023-02-24T23:36:38Z",
-      "verificationMethod": "did:key:z6DtQLPTjrtwoKJKW2L1UWfUdDLbuhUwUkAywwiVCRXFjEer#z6DtQLPTjrtwoKJKW2L1UWfUdDLbuhUwUkAywwiVCRXFjEer",
+      "verificationMethod": "did:key:zQ3shbMg2QjXRo7kxtBfeuDXsopZvMy5ddBRM9xuWArRtXhp9#zQ3shbMg2QjXRo7kxtBfeuDXsopZvMy5ddBRM9xuWArRtXhp9",
       "proofPurpose": "assertionMethod",
-      "proofValue": "z4Mmi9jhXQwWbdZ4JLB3JTt9saiRni5wg7CazG71y5RtyCqU2CoQNJG5YVZmmBAEA79ve6jD6Gc8iEJu85U4JaieE"
+      "proofValue": "z46Vfx4R5FN741N6c5HvAtLYYQm6kasrFxDqugK5dbNfUEqbswJzAiXCRnoWez4BxJXxGA4TWuTjxG14SWpkZN7PP"
     },
     {
       "type": "DataIntegrityProof",
       "id": "urn:uuid:d94f792a-c546-4d06-b38a-da070ab56c23",
       "cryptosuite": "bip340-rdfc-2025",
       "created": "2023-02-26T22:06:38Z",
-      "verificationMethod": "did:key:z6DtekoxvG947C2mGAP4rqKiAH5Pr9RZbLPvknnKtRFF987B#z6DtekoxvG947C2mGAP4rqKiAH5Pr9RZbLPvknnKtRFF987B",
+      "verificationMethod": "did:key:zQ3shazKaumGh4Ra6jS17x52MhWryi5phx3C1peA4iA2BUP5a#zQ3shazKaumGh4Ra6jS17x52MhWryi5phx3C1peA4iA2BUP5a",
       "proofPurpose": "assertionMethod",
       "previousProof": [
         "urn:uuid:26329423-bec9-4b2e-88cb-a7c7d9dc4544",
         "urn:uuid:8cc9022b-6b14-4cf3-8571-74972c5feb54"
       ],
-      "proofValue": "zu1RmZnfbiyJb5iQR6KtpdniDDEQPz61dUfBbQdXX8xNBMi8qhy6a4rKoAHDHdNn8CQaNTCaUmaA7mvNoWazxf2L"
+      "proofValue": "zVYKk6TMbUyLiuq5aKRhhcqhK9QGBYgz55oVaLAmiV2Zx77iFj7THPEvbhYWmvrKX3m6Z2kf8e5hzmMmgLdg21qs"
     }
   ]
 }
