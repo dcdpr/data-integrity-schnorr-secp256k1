@@ -3,7 +3,7 @@
   "id": "urn:uuid:d94f792a-c546-4d06-b38a-da070ab56c23",
   "cryptosuite": "bip340-rdfc-2025",
   "created": "2023-02-26T22:06:38Z",
-  "verificationMethod": "did:key:z6DtekoxvG947C2mGAP4rqKiAH5Pr9RZbLPvknnKtRFF987B#z6DtekoxvG947C2mGAP4rqKiAH5Pr9RZbLPvknnKtRFF987B",
+  "verificationMethod": "did:key:zQ3shazKaumGh4Ra6jS17x52MhWryi5phx3C1peA4iA2BUP5a#zQ3shazKaumGh4Ra6jS17x52MhWryi5phx3C1peA4iA2BUP5a",
   "proofPurpose": "assertionMethod",
   "previousProof": [
     "urn:uuid:26329423-bec9-4b2e-88cb-a7c7d9dc4544",

@@ -9,3 +9,9 @@ issues and Pull Requests in the GitHub repository, discussions also occur on the
 [public-credentials](http://lists.w3.org/Archives/Public/public-credentials/) mailing list.
 
 Draft specification: https://dcdpr.github.io/data-integrity-schnorr-secp256k1/
+
+
+# Test Vectors
+
+Test vectors were generated using the following library: https://github.com/LegReq/bip340-cryptosuite-test-vectors
+
