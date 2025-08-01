@@ -115,6 +115,20 @@
             date: "2020-01-19",
             href: "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki"
           },
+          BIP327: {
+            authors: ["Jonas Nick", "Tim Ruffing", "Elliott Jin"],
+            title: "MuSig2 for BIP340-compatible Multi-Signatures",
+            publisher: "Bitcoin Improvement Proposal",
+            date: "2022-03-22",
+            href: "https://github.com/bitcoin/bips/blob/master/bip-0327.mediawiki"
+          },
+          RFC9591: {
+            authors: ["Deirdre Connolly", "Chelsea Komlo", "Ian Goldberg", "Christopher A. Wood"],
+            title: "The Flexible Round-Optimized Schnorr Threshold (FROST) Protocol for Two-Round Schnorr Signatures",
+            publisher: "Internet Research Task Force",
+            date: "2024-06-28",
+            href: "https://datatracker.ietf.org/doc/rfc9591/"
+          },
           Provable_Ed25519: {
             authors: ["Jacqueline Brendel", "Cas Cremers", "Dennis Jackson", "Mang Zhao"],
             title: "The Provable Security of Ed25519: Theory and Practice",
@@ -1199,6 +1213,39 @@ Return `verificationResult` as the <em>verification result</em>.
         </section>
       </section>
 
+    </section>
+
+    <section class="informative">
+      <h2>Supporting Multi Signature Protocols</h2>
+      <p>
+      The cryptographic properties of [[BIP340]] Schnorr signatures support aggregation, 
+      giving rise to interesting multi-signature protocols; MuSig2 [[BIP327]] 
+      and FROST [[RFC9591]]. Both of these protocols define how to generate aggregated public 
+      Schnorr keys and how to produce valid Schnorr signatures from these keys. 
+      It is important to note that these keys and signatures are indistinguishable from any other 
+      Schnorr public key and signature. In other words, using the public key it is possible to verify
+      a signature produced with a multi-signature protocol following the standard Schnorr 
+      verification algorithm defined in [[BIP340]]. The verifier does not need to know
+      how the signature was produced to be able to verify it against the provided public key. 
+      Therefore, from a verification perspective, this specification already supports these 
+      multi-signature protocols.
+      </p>
+      <p>
+      From a signing perspective, for a controller of a verification method to use these 
+      multi-signature protocols they must modify the algorithms for public key generation 
+      and signature creation. These become the multi-party crytographic protocols defined 
+      by the respective specifications requiring the exchange of messages between the n 
+      participants of a cryptographic cohort: n-of-n for MuSig2 [[BIP327]] or m-of-n for 
+      FROST [[RFC9591]]. For example, with MuSig2 [[BIP327]], each participant generates 
+      an individual Schnorr public key which are then shared and aggregated together to 
+      produce the aggregated n-of-n public key. Once constructed this public key can be 
+      included in a verification method using the same Multikey header. In order to produce 
+      a proof using this verification method, the multi-party signing algorithm defined in [[BIP327]] 
+      would have to be used instead of the [[BIP340]] signature algorithm in the 
+      Proof Serialization section of the respective cryptosuites. While the key generation 
+      and signing algorithms for FROST signatures [[RFC9591]] are different, 
+      the approach for using them with this specification is the same.
+      </p>
     </section>
 
     <section>
